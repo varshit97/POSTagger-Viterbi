@@ -13,7 +13,7 @@ tagcount = {}
 startEnd = {}
 
 #Open the file having word and its tags
-f = open('a', 'r')
+f = open('wordToTagMap', 'r')
 a = f.readlines()
 f.close()
 
@@ -39,7 +39,7 @@ for word in mainDict.keys():
             tagcount[tag] += mainDict[word][tag]
 
 #Open the file having bigrams
-g = open('b', 'r')
+g = open('bigramCount', 'r')
 b = g.readlines()
 g.close()
 
